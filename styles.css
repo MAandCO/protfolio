@@ -473,19 +473,24 @@ section {
 .about-stats {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin-top: 4rem;
+    gap: 1.5rem;
+    margin-top: 3rem;
 }
 
 .stat {
     text-align: center;
-    padding: 2.5rem 2rem;
+    padding: 1.5rem 1.5rem;
     background: white;
     border-radius: 20px;
     transition: var(--transition);
     border: 1px solid var(--border-color);
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
 }
 
 .stat::before {
@@ -512,20 +517,21 @@ section {
 
 .stat-number {
     display: block;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 800;
     background: var(--accent-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    margin-bottom: 0.5rem;
     letter-spacing: -0.02em;
+    line-height: 1;
 }
 
 .stat-label {
     color: var(--text-light);
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
 }
 
 /* Services Section - Glassmorphism Cards */
@@ -1201,7 +1207,7 @@ section {
     }
 
     .stat {
-        padding: 2rem 1.5rem;
+        padding: 1.5rem 1rem;
     }
 
     .stat-number {
